@@ -22,7 +22,7 @@ public class InventoryController {
 
 
 
-    @RequestMapping(value = "inventories/{id}/decresestock",
+    @RequestMapping(value = "inventories/{id}/decreasestock",
         method = RequestMethod.PUT,
         produces = "application/json;charset=UTF-8")
     public Inventory decreaseStock(@PathVariable(value = "id") Long id, @RequestBody DecreaseStockCommand decreaseStockCommand, HttpServletRequest request, HttpServletResponse response) throws Exception {
